@@ -9,10 +9,10 @@ const text = document.querySelector('#caption');
 // console.log(thumbs);
 
 // マウスオーバー
-thumbs.forEach(function(item, index) {
-    item.onmouseover = function() {
-      // console.log(this.dataset.image);
-      main.src = this.dataset.image;
-      text.textContent = this.title;
-    }
-  });
+thumbs.forEach(function (item, index) {
+  item.onmouseover = function () {
+    // console.log(this.dataset.image);
+    main.src = this.dataset.image;
+    text.textContent = this.title;
+  }
+});
